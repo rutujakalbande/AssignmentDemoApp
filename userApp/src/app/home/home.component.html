@@ -1,0 +1,41 @@
+
+<div *ngIf="showMainPage"> 
+    <div>
+        <h1 class="text-danger text-center text-bold">Welcome to Demo App</h1>
+
+    </div>
+    <br/> 
+    <div class="slidersec">
+        <div class="sliderimage">
+                <ngb-carousel> 
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <img src="/assets/newSet/003.jfif" alt="Random first slide"   height="450" width="1200">
+                        </div>
+                    </ng-template> 
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <img src="/assets/newSet/004.jfif" alt="Random first slide"   height="450" width="1200">
+                        </div>
+                    </ng-template> 
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <img src="/assets/newSet/001.jfif" alt="Random first slide"   height="450" width="1200">
+                        </div>
+                    </ng-template>  
+                </ngb-carousel> 
+            </div>  
+    </div>   
+    <br/> 
+    <div  class="  text-center">
+        <button mat-raised-button color="accent"  type="submit" (click)="openDialog()"   >Register</button>
+    </div>
+ 
+</div>
+
+
+
+
+<div *ngIf="!showMainPage"> 
+  <app-profile [stData]="studentData"   ></app-profile>
+ </div>
