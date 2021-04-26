@@ -26,7 +26,11 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ProfileComponent } from './profile/profile.component';
 import { AboutUsComponent } from './about-us/about-us.component';
- 
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { AllUserComponent } from './all-user/all-user.component';
+import { FindUserByNameComponent } from './find-user-by-name/find-user-by-name.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DemoControllerService } from './demo-controller.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +38,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
     RegistrationComponent,
     HomeComponent,
     ProfileComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    SignUpComponent,
+    AllUserComponent,
+    FindUserByNameComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     NgbModule,
-    
+    HttpClientModule,
     MatInputModule,
     MatCardModule,
     MatButtonModule,
@@ -60,7 +67,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     MatCheckboxModule
     
   ],
-  providers: [],
+  providers: [DemoControllerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

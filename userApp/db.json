@@ -1,0 +1,19 @@
+{
+
+"Users" : [
+
+                    { 
+                            "firstName"   : "Rutuja",
+                            "lastName"    : "Rutuja",
+                            "email"       : "Rutuja@gmail.com",
+                            "mobileNumber": "9595955",
+                            "state"       : "Maharashtra",
+                            "country"     : "India",
+                            "interest"    :"Cricket",
+                            "age"         : "25",
+                            "loadOldFlag" : "false",
+                            "address"     :"Pune"
+                    }
+
+] 
+}

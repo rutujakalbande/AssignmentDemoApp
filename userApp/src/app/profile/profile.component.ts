@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output ,EventEmitter} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { DemoControllerService } from '../demo-controller.service';
 import { RegistrationComponent } from '../registration/registration.component';
 import { StuentProfile } from '../stuent-profile';
  
@@ -15,7 +16,9 @@ export class ProfileComponent implements OnInit {
 
   @Output() notifyParent = new EventEmitter();
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog,
+    private  demoControllerService :  DemoControllerService 
+    ) { }
 
   ngOnInit(): void {
   }
@@ -42,5 +45,10 @@ export class ProfileComponent implements OnInit {
                     }  
               }); 
       console.log('Parent page called End..');
+  }
+
+
+  addUser(){
+    this.demoControllerService.addUserData(this.stData);
   }
 }
