@@ -11,7 +11,7 @@ import { RegistrationComponent } from '../registration/registration.component';
 })
 export class FindUserByNameComponent implements OnInit {
 
-  signupModelForm : any= new  StuentProfile('','','','','','','','','','','');
+  signupModelForm : any= new  StuentProfile('','','','','','','','','','','','');
   searchQuery : string;
  
   flagData: any= false;
@@ -23,11 +23,12 @@ export class FindUserByNameComponent implements OnInit {
   search()
   {
     console.log(" --- searchQuery -- "+ this.searchQuery);
-    this.demoControllerService.findDataByName(this.searchQuery).subscribe((p :StuentProfile ) =>  
+    this.demoControllerService.findDataByName(this.searchQuery).subscribe((p  ) =>  
     {  
       this.signupModelForm =p; 
+      console.log('  this.signupModelForm =>  '+ this.signupModelForm.firstName);
       this.flagData =true;
-
+      this.signupModelForm.loadOldFlag = true;
       const dialogRef = this.dialog.open(RegistrationComponent, {
         width: '750px',
         data: this.signupModelForm

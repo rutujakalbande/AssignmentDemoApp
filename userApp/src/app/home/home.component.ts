@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { RegistrationComponent } from '../registration/registration.component';
 import { StuentProfile } from '../stuent-profile';
-
+import { NavigationExtras, Router } from '@angular/router';
+import { NgxNavigationWithDataComponent } from 'ngx-navigation-with-data';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,7 +14,7 @@ export class HomeComponent implements OnInit {
   studentData :any = StuentProfile;
 
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private router :Router,public navCtrl: NgxNavigationWithDataComponent) { }
 
   ngOnInit(): void {
   }
@@ -28,14 +29,16 @@ export class HomeComponent implements OnInit {
 
             dialogRef.afterClosed().subscribe(result => {
             console.log('The dialog was closed', result);
+            this.studentData = result.data;
             if(result.data.firstName == null ||result.data.firstName == "" )
               {
                 console.log ('Nulll');
               }
             else{
-                console.log (result.data.firstName);
-                this.showMainPage = false;
-                this.studentData = result.data;
+              console.log ('this.studentData.id ', this.studentData.name);
+           
+              this.router.navigate(['/profile',result.data.id ]);
+            
               } 
           }); 
         }

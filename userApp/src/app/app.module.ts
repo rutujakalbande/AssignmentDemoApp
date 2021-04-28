@@ -31,6 +31,9 @@ import { AllUserComponent } from './all-user/all-user.component';
 import { FindUserByNameComponent } from './find-user-by-name/find-user-by-name.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DemoControllerService } from './demo-controller.service';
+import { FooterComponent } from './footer/footer.component';
+import { NgxNavigationWithDataComponent } from 'ngx-navigation-with-data';
+import { EditPageComponent } from './edit-page/edit-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +44,9 @@ import { DemoControllerService } from './demo-controller.service';
     AboutUsComponent,
     SignUpComponent,
     AllUserComponent,
-    FindUserByNameComponent
+    FindUserByNameComponent,
+    FooterComponent,
+    EditPageComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +72,7 @@ import { DemoControllerService } from './demo-controller.service';
     MatCheckboxModule
     
   ],
-  providers: [DemoControllerService],
+  providers: [DemoControllerService,NgxNavigationWithDataComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,6 +9,7 @@ import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { StuentProfile } from '../stuent-profile';
+import { DemoControllerService } from '../demo-controller.service';
 
 
 
@@ -21,7 +22,7 @@ import { StuentProfile } from '../stuent-profile';
 export class RegistrationComponent implements OnInit {
 
 ///Variable Declaration Section 
-  profileD : any = new StuentProfile('','','','','','','','','','','');
+  profileD : any = new StuentProfile('','','','','','','','','','','','');
   registrationForm: FormGroup;
   imagePreview : String = "/assets/newSet/upload.png";
   imageValidation  = false;
@@ -31,7 +32,7 @@ export class RegistrationComponent implements OnInit {
   countryArr : any =['Australia','Ameraica','Great Britain','India','Indonesia','Japan','Myanmar','Bhutan'];
 
   constructor(public dialogRef: MatDialogRef<RegistrationComponent>,
-    @Inject(MAT_DIALOG_DATA) public enqDataRecevied: StuentProfile
+    @Inject(MAT_DIALOG_DATA) public enqDataRecevied: StuentProfile,private demoControllerService : DemoControllerService
     ) {
           this.registrationForm = new FormGroup
           (
@@ -64,6 +65,7 @@ export class RegistrationComponent implements OnInit {
           } 
       ); 
 
+     
             //This logic is when we are trying to Edit Image or Edit Profile
             if(enqDataRecevied.loadOldFlag == true)
             {
@@ -180,6 +182,10 @@ export class RegistrationComponent implements OnInit {
   submit()
   {
         console.log('this.registrationForm.value = ' +this.registrationForm.value);
+        if(this.imagePreview=='/assets/newSet/upload.png')
+                {
+                  this.imageValidation = true;
+                }
          this.formSubmitFlag = true;
           if(this.registrationForm.valid )
           {
@@ -200,7 +206,14 @@ export class RegistrationComponent implements OnInit {
                     this.profileD.age =this.registrationForm.value.ageValue;
                     this.profileD.interest = this.tags;
                     this.profileD.address= this.registrationForm.value.address;
-                    this.onNoClick(); 
+                    this.demoControllerService.addUserData(this.profileD  ).subscribe(p   =>{
+                      console.log('yes ----  this.profileD.id =  ', p.id);
+                      this.profileD.id = p.id;
+                      this.onNoClick(); 
+                    });
+
+                     
+                     
                 }
           }
     }
