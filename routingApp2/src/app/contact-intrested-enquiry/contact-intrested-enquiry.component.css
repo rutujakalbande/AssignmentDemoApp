@@ -1,0 +1,32 @@
+
+
+.enquiryCss{
+    background-image: url("/assets/learnIndia/background-1.PNG");
+     background-color: #EFFBFB;
+    margin-bottom : 20px;
+    border-top-left-radius: 1% solid black;
+}
+
+.inputText{
+    font-weight: normal;
+     font-size:16px;
+     
+     color:#585858;
+}
+
+
+.inputTextUser{
+    font-weight: bold;
+     font-size:16px;
+     color: green;
+}
+.enquiryCss1{
+    
+    background-image: url("/assets/learnIndia/background-13.PNG");
+}
+
+.mat-form-field
+{
+  width : 500px;
+}
+

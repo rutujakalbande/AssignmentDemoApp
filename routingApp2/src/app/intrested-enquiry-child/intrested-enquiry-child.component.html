@@ -1,0 +1,126 @@
+ 
+
+  
+
+<div style="padding-top:15px;border-bottom:5px solid lightblue" class="container">
+
+    <table style="background-color: #FAFAFA;width: 100%;" class="  ">
+        <thead>
+
+            <tr> 
+                    <td style="width : 25%;">
+                        <span *ngIf="!enquiryData.contactedByTeam" title="New Enquiry">
+                            <button type="button" class="btn" 
+                                    style="background-color: skyblue;color:black;font-weight: bold;"
+                                    (click)="contactNow();">
+                                    Contact 
+                             </button>
+                           
+                        </span>
+                        <span *ngIf="enquiryData.contactedByTeam" title="Contacted">
+                            <button type="button" class="btn" 
+                                    style="background-color: green;color:white;font-weight: bold;"
+                                    (click)="contactNow();">
+                                    Contact</button> 
+                        </span>
+                       
+                    </td>
+
+                     
+                   
+                 
+            </tr>
+
+          
+            <tr>
+                
+                <td style="width : 25%;font-weight: bold;">
+                    First Name : 
+                </td>
+                <td class="text-primary" style="width : 25%;font-weight: bold;">
+                    {{enquiryData.firstName}}
+                </td>
+                <td style="width : 25%;font-weight: bold;">
+                    Last Name : 
+                </td>
+                <td class="text-primary" style="width : 25%;font-weight: bold;">
+                    {{enquiryData.lastName}}
+                </td>
+            </tr>
+
+
+            <tr>
+                
+                <td style="width : 25%;font-weight: bold;">
+                    Cource : 
+                </td>
+                <td class="text-primary" style="width : 25%;font-weight: bold;">
+                    {{enquiryData.cource}}
+                </td>
+                <td style="width : 25%;font-weight: bold;">
+                    Location : 
+                </td>
+                <td class="text-primary" style="width : 25%;font-weight: bold;">
+                    {{enquiryData.location}}
+                </td>
+            </tr>
+
+
+            <tr>
+                
+                <td style="width : 25%;font-weight: bold;">
+                    Email : 
+                </td>
+                <td class="text-primary" style="width : 25%;font-weight: bold;">
+                    {{enquiryData.emailId}}
+                </td>
+                <td style="width : 25%;font-weight: bold;">
+                    Mobile Number : 
+                </td>
+                <td class="text-primary" style="width : 25%;font-weight: bold;">
+                    {{enquiryData.mobileNumber}}
+                </td>
+            </tr>
+
+            <tr>
+                
+                <td style="width : 25%;font-weight: bold;">
+                    Contacted By Team : 
+                </td>
+                <td style="width : 25%;font-weight: bold;">
+                    <span *ngIf="enquiryData.contactedByTeam"  class="text-success" >Yes</span>
+                    <span *ngIf="!enquiryData.contactedByTeam"  class="text-danger" >No</span>
+                </td> 
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+
+            <tr *ngIf="enquiryData.contactedByTeam">
+                
+                <td style="width : 25%;font-weight: bold;">
+                    Candidate Comment : 
+                </td>
+                <td style="width : 25%; ">
+                     {{ enquiryData.commentsByCandidate}}
+                </td> 
+                <td>
+
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+ 
+
+          
+                <tr>
+                    
+                </tr>
+                <br/>
+        </thead>
+    </table>
+</div>

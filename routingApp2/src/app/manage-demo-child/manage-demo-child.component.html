@@ -1,0 +1,73 @@
+ 
+
+  
+
+<div style="padding-top:15px;border-bottom:5px solid lightblue" class="container">
+
+    <table style="background-color: #FAFAFA;width: 100%;" class="  ">
+        <thead>
+                <tr>
+                    <td style="font-weight: bold;">
+                        {{dList.demoName}}
+                    </td>
+                </tr>
+
+                <tr >
+                    <td style="width : 25%;">
+                        Demo Date : 
+                    </td>
+                    <td style="width : 25%;">
+                        {{dList.demoDate}}
+                     </td>
+
+                     <td style="width : 25%;">
+                        Demo Location : 
+                    </td>
+                    <td style="width : 25%;">
+                        {{dList.demoLocation}}
+                     </td>
+                </tr>
+
+
+
+                <tr >
+                    <td style="width : 25%;">
+                        Demo Mode : 
+                    </td>
+                    <td style="width : 25%;">
+                        {{dList.demoMode}}
+                     </td>
+
+                     <td style="width : 25%;">
+                        Demo Fees : 
+                    </td>
+                    <td style="width : 25%;">
+                        {{dList.demoFees}}
+                     </td>
+                </tr> 
+
+                  
+                <tr>
+                    <td>
+                        {{dList.demoFaculty}}
+                     </td>
+                     
+                    
+                </tr>
+                <tr>
+                    <td style="width : 25%;">
+                      <button (click)="update()" >Update</button>
+                     </td>
+
+                     <td style="width : 25%;">
+                        <button (click)="delete()">Delete</button>
+                       </td>
+
+                       <td style="width : 50%;">
+                        
+                       </td>
+                </tr>
+                <br/>
+        </thead>
+    </table>
+</div>

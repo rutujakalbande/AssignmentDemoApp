@@ -1,0 +1,100 @@
+<mat-toolbar color="" class="hCss2 ">
+   <!-- <span>
+      <a mat-button routerLink="/home" routerLinkActive="mat-accent">Student Training Application</a>
+     <!--    <a class="navbar-brand text-danger " href="#">Student Training Application</a> -->
+    <!--  </span> --> 
+    <span class=" "></span>
+    <ul >
+      <li>
+        <a mat-button routerLink="/learnHome" routerLinkActive="mat-accent">Home</a>
+      </li>
+      <li>
+        <a mat-button routerLink="/student" routerLinkActive="mat-accent">Student</a>
+      </li>
+
+      <li>
+        <a mat-button routerLink="/allStudent" routerLinkActive="mat-accent">All Student</a>
+      </li>
+
+      
+      <li>
+        <a mat-button routerLink="/learnCources" routerLinkActive="mat-accent">Cources</a>
+      </li>
+      <!-- <li>
+        <a mat-button routerLink="/learnBatch" routerLinkActive="mat-accent">New Batch </a>
+      </li> -->
+      <li>
+        <a mat-button routerLink="/learnDemo" routerLinkActive="mat-accent">Demo</a>
+      </li>
+   
+      <li>
+        <a mat-button routerLink="/learnCertification" routerLinkActive="mat-accent">Certification</a>
+      </li>
+      <li>
+        <a mat-button routerLink="/learnJobOpening" routerLinkActive="mat-accent">Job Opening</a>
+      </li>
+ 
+      
+
+      <li *ngIf="userIsAuthenticated && userRole== 'Admin'">
+        <a mat-button routerLink="/learnAdmin" routerLinkActive="mat-accent">New Admin</a>
+      </li>
+
+
+      <li *ngIf="userIsAuthenticated && userRole== 'Admin'">
+        <a mat-button routerLink="/admin" routerLinkActive="mat-accent">Admin</a>
+      </li>
+
+  <!--     <li>
+        <a mat-button routerLink="/customer" routerLinkActive="mat-accent">Customer</a>
+      </li>
+
+-->
+
+      <li *ngIf="userIsAuthenticated && userRole== 'Trainer'">
+        <a mat-button routerLink="/trainer" routerLinkActive="mat-accent">Trainer</a>
+      </li>
+
+      <li *ngIf="userIsAuthenticated ">
+        <a mat-button routerLink="/myData" routerLinkActive="mat-accent">Manage My Data</a>
+      </li>
+
+      <li *ngIf="!userIsAuthenticated">
+        <a mat-button routerLink="/login"  routerLinkActive="mat-accent">Login</a>
+      </li>
+      <li *ngIf="!userIsAuthenticated">
+        <a mat-button routerLink="/signUp" routerLinkActive="mat-accent">Signup</a>
+      </li>
+      <li>
+        <a mat-button routerLink="/learnContactUs" routerLinkActive="mat-accent">Contact Us</a>
+      </li>
+      <li *ngIf="userIsAuthenticated" >
+        <a style="text-align: right;" mat-button (click) ="onLogout()">Logout&nbsp;&nbsp;</a>
+      </li>
+    </ul>
+  </mat-toolbar>
+ 
+    <div  class=" hCss3">
+      <marquee width="100%" behavior="alternate" style="color: black; ">  
+        Be Master in Data Science - Spark | Scala | Python For Machine Leaning | R Language With Complete Practical              
+</marquee>
+</div>
+
+ 
+<!-- 
+<nav class="navbar navbar-expand-sm  bg-light  navbar-light">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand text-danger " href="#">Student Training Application</a>
+      </div>
+      
+     
+      <ul class="nav navbar-nav">
+          
+          <li><a routerLink="gmail"  class="navbar-brand" ><span class="fa fa-fw fa-user "></span>Gmail</a></li>
+             <li><a routerLink="signUp"  class="navbar-brand" ><span class="fa fa-fw fa-user "></span> Sign Up</a></li>
+        <li><a routerLink="login"  class="navbar-brand" ><span class="fa fa-fw  fa-unlock-alt"></span> Login</a></li>
+        <li><button> Logout </button> </li>
+      </ul>
+    </div>
+  </nav>-->

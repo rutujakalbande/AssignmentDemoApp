@@ -1,0 +1,82 @@
+img {
+    max-width: 100%;
+    max-height: 80%;
+}
+ 
+.home_back_ground1{
+     
+   background-image: url("/assets/learnIndia/home/student-background-1.jpg"); 
+  }
+
+  .home_back_ground2{
+     
+    background-image: url("/assets/learnIndia/background-13.PNG");
+  }
+
+  :host {
+    display: block;
+  }
+  
+  .open-close-container {
+    border: 1px solid #dddddd;
+    margin-top: 1em;
+    padding: 20px 20px 0px 20px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+
+  /* Ajay css start*/
+  .slidersec{
+     
+   
+    background-color: #f2f2f2;
+     
+}
+
+
+.sliderimage{  
+  background-color: #fff;
+ 
+}
+ 
+.zoom{
+  cursor : pointer;
+
+}
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+  
+.courcesTabLeft
+{
+  
+  width:20%;
+  float:left;
+  
+}
+
+.courcesTabRight
+{
+  background-color:#F2F2F2;
+  width:20%;
+  float:right;
+  
+}
+
+.tdCourcesTab
+{
+  padding-left:50px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+.tdCourcesStar
+{
+  padding-left:50px;
+  font-weight: bold;
+   cursor:pointer;
+}
+  /*Ajay css ensd */

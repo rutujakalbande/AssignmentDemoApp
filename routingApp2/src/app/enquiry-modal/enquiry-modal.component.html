@@ -1,0 +1,111 @@
+<div class="enquiryCss container">
+    <div> 
+        <button class="pull-right" (click)="onNoClick()">    <i class="fa fa-times" aria-hidden="" ></i></button>
+        <h1 mat-dialog-title>Enquiry Form </h1>
+    
+    </div>
+
+    <div style="border-top : 3px  solid black "> 
+      <form #enqForm = "ngForm" >  
+   
+    <div mat-dialog-content>
+       
+      <p style="padding-top:5px;">Please fill below details!</p>
+      <mat-form-field>
+        <mat-label class="inputText"  >First Name</mat-label>
+        <input matInput  class="inputTextUser" 
+                          name="userFirstNameDisplay" 
+                          autocomplete="off"
+                          required
+                            [(ngModel)]="enquiryModelForm.firstName"
+                            #firstName="ngModel"
+                            [class.is-invalid]="firstName.invalid && firstName.touched"         
+        >
+      </mat-form-field>
+    </div>
+
+    <div mat-dialog-content> 
+
+      <mat-form-field>
+        <mat-label class="inputText"  >Last Name</mat-label>
+        <input matInput  class="inputTextUser" 
+                          name="userLastNameDisplay" 
+                          autocomplete="off"
+                          required
+                            [(ngModel)]="enquiryModelForm.lastName"
+                            #lastName="ngModel"
+                            [class.is-invalid]="lastName.invalid && lastName.touched"         
+        >
+      </mat-form-field>
+    </div>
+
+
+    <div mat-dialog-content>
+    <mat-form-field>
+        <mat-label class="inputText" >Cource Looking for</mat-label>
+        <input matInput  class="inputTextUser" 
+                          name="userCourceDisplay" 
+                          autocomplete="off"
+                          required
+                            [(ngModel)]="enquiryModelForm.cource"
+                            #cource="ngModel"
+                            [class.is-invalid]="cource.invalid && cource.touched"         
+        >
+      </mat-form-field>
+    </div>
+
+    <div mat-dialog-content>
+      <mat-form-field >
+          <mat-label class="inputText" >Place</mat-label>
+          <input matInput  class="inputTextUser" 
+                            name="userLocationDisplay" 
+                            autocomplete="off"
+                            required
+                              [(ngModel)]="enquiryModelForm.location"
+                              #location="ngModel"
+                              [class.is-invalid]="location.invalid && location.touched"         
+          >
+        </mat-form-field>
+      </div>
+
+    <div mat-dialog-content>
+    <mat-form-field>
+        <mat-label class="inputText" >Email Id</mat-label>
+        <input matInput  class="inputTextUser" 
+                          name="userEmailDisplay" 
+                          autocomplete="off"
+                          required
+                            [(ngModel)]="enquiryModelForm.emailId"
+                            #emailId="ngModel"
+                            [class.is-invalid]="emailId.invalid && emailId.touched"         
+        >
+      </mat-form-field>
+    </div>
+      <div mat-dialog-content>
+    <mat-form-field>
+        <mat-label class="inputText" >Contact Number</mat-label>
+        <input matInput  class="inputTextUser" 
+                          name="userMobileDisplay" 
+                          autocomplete="off"
+                          required
+                            [(ngModel)]="enquiryModelForm.mobileNumber"
+                            #mobile="ngModel"
+                            [class.is-invalid]="mobile.invalid && mobile.touched"         
+        >
+      </mat-form-field>
+    </div>
+
+
+
+    <div mat-dialog-actions>
+    
+      <button mat-raised-button [disabled] = "enqForm.form.invalid" color="primary" (click)="saveEnquiry()">Submit</button>
+      <button mat-stroked-button (click)="onNoClick()">No Thanks</button>
+    
+     
+    </div>
+
+</form>
+
+    </div>
+ </div>

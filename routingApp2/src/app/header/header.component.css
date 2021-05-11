@@ -1,0 +1,55 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    font-weight:bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: red;
+  }
+
+  a:hover {
+     border-bottom:  5px solid green;
+  }
+
+    
+ dangerLogout {
+    font-weight:bold;
+    font-size: 22px;
+    text-decoration: none;
+    color: red;
+  }
+
+
+ 
+
+ 
+
+
+  
+  ul {
+    display: flex;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .hCss{
+    background-color: #009cdd;
+    
+  }
+
+  
+  .hCss2{
+     
+    background-image: url("/assets/learnIndia/background-13.PNG");
+  }
+
+  .hCss3{
+    border-top:  3px solid #009cdd;
+    border-bottom:  3px solid #009cdd;
+  }

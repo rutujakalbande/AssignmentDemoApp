@@ -1,0 +1,117 @@
+
+ 
+
+<div style="margin-top: 15px;">
+        
+</div>
+        <div style="width:100%;padding-bottom : 20px;height:200px" class="container" *ngIf="courceDetailData != null">
+                <div style="   width: 25%; float:left">
+        
+                        <img     alt="Cinque Terre"  [src]="courceDetailData.courceImage" >
+                         
+                      
+                      
+                         
+                </div>
+               
+ 
+                <div  style="width:75%;float:right">  
+
+                             
+                                         <div style="width:100%;float: left;font-weight:bold;font-size:18px;  text-decoration: underline;
+                                                      color: #585858">
+                                                {{courceDetailData.courceName}}
+                                         </div> 
+
+                                         <div>
+                                                 <br/>
+                                                 <div style="width:100%;float: left; ">
+                                                 <tr>
+                                                        <td class="tdCourcesStar">
+                                                          <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                          <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                          <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                          <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                          <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        </td>
+                                                      </tr>
+                                         </div> 
+                                         </div>
+                                
+                                         <div> 
+                                                <br/>
+                             
+                                                        <div style="width:50%;float: left;">
+                                                                Cource Mode : {{courceDetailData.courceMode}}
+                                                        </div>
+                                                        
+                                                        <div style="width:50%;float: right;" class="text-left">
+                                                                Duration : {{courceDetailData.courceDuration}}
+                                                        </div>
+                                                        
+                                         </div>
+
+                                         <div> 
+                                                <br/>
+                             
+                                                        <div style="width:50%;float: left;" >
+                                                                Trainer : {{courceDetailData.courceTrainer}}
+                                                        </div>
+                                                        
+                                                        <div style="width:50%;float: right;" class="text-left">
+                                                                Location : {{courceDetailData.courceLocation}}
+                                                        </div>
+                                                        
+                                         </div>
+                                         <div> 
+                                                <br/>
+                             
+                                                        <div style="width:100%;float: left;">
+                                                                Batch Start Date :  {{courceDetailData.courceBatchStartDate}}
+                                                        </div>
+                                                        
+                                                        
+                                                        
+                                         </div>
+
+                                         <div>
+                                                 <br/>
+                                                 <div style="width:50%;float: left;">
+                                                        Cource Fees : {{courceDetailData.courceFees}}
+                                                </div>
+                                                
+                                                <div style="width:50%;float: right;" class="text-left">
+                                                        <div style="width:30%;float:left;padding-right:10px;"> 
+                                                        <input type="text" autocomplete="off" name="userDiscount"placeholder="Percent" class="form-control"  
+                                                        [(ngModel)]="discount"> 
+                                                        </div>
+                                                         
+                                                                <button  mat-raised-button color="primary" (click)="calculateDiscount();">Discount</button>
+                                                        
+                                                        
+                                                       
+                                                    
+                                                </div>
+                                         </div>
+
+                                         <div> 
+                                                <br/>
+                             
+                                                        <div style="width:100%;float: left;margin-top:-15px;">
+                                                               <span >Discounted Price : </span>
+                                                                <span style="color:green;font-weight:bold"> 
+                                                                        {{courceDetailData.courceFeesAfterDiscount}}
+                                                                 </span>  
+                                                        </div>
+                                                        
+                                                       
+                                                        
+                                         </div>
+                        </div>  
+                         
+
+        </div>
+ 
+         
+ 
+       

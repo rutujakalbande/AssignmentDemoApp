@@ -1,0 +1,708 @@
+/*
+Theme Name: Radical
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body { margin: 0;padding: 0 !important; width: 100%; float: left; border-top: 4px solid #009cdd; font-family: 'Lato', sans-serif;}
+.home #wrapper { float: left; width: 100%; padding: 0; background: #f4f4f4}
+#wrapper { float: left; width: 100%; padding: 0; background: #fff}
+p { font: normal 15px/22px 'Lato'; color: #494949;}
+h1{font-size: 24px;}
+.top_container{padding: 10px 0 0 0; background: #fff;}
+.logo_block{margin-top: 100px;}
+.search-form { float: right; margin: 10px 20px 0 0;}
+.search-form input{border-color: #e6e6e6; height:30px;}
+form{margin-bottom: 0}
+.top-logos img{float: right; margin-left: 10px;}
+.container{position: relative;}
+.content-wrapper h2{font-size: 30px;}
+.alignright{ float: right; margin: 0 0 12px 15px;  }
+.alignleft{ margin: 0 15px 12px 0px; float: left;}
+
+/******************************Main Menu******************************/
+.navbar, .navbar-inner{background: #009cdd; border:none; margin-bottom: 0}
+#main_nav { width: 100%; margin: 0; padding: 0;}
+#mainnav {margin: 0; padding: 0;list-style: none;}
+#mainnav li { float: left;list-style: none; position: relative; margin: 0 1px 0 0;}
+#mainnav li ul.sub-menu li {background: none !important;}
+#mainnav li a { color: #fff; text-decoration: none; padding: 15px 15px 10px 15px; float: left; border-bottom: 5px solid #009cdd;}
+#mainnav li.current-menu-item a,
+#mainnav li a:hover,
+ul#mainnav li.current-menu-ancestor a {border-bottom: 5px solid #f5f861;}
+#mainnav li ul.sub-menu { background: #045cda; left: 0; margin: 0; padding: 0 !important; position: absolute; top: 48px; z-index: 9999; display: none; width: 200px;}
+#mainnav li:hover ul {display: block;}
+#mainnav li ul.sub-menu li a { text-transform: none; padding: 10px 20px !important; margin: 0 !important; background: none !important; white-space: nowrap;}
+#mainnav li ul.sub-menu ul { display: block; display: none; left: 199px; top: 0;}
+#mainnav li ul.sub-menu li:hover ul {display: block;}
+
+
+
+.accordion h3 {
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 0 13px;
+    margin: 0 0 -1px 0;
+    overflow: hidden;
+}
+.accordion-content {
+    padding: 14px 18px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    margin: 0 0 -1px 0;
+}
+.tab-pane{overflow: hidden;}
+
+/*Banner wrapper*/
+.banner-wrapper{background: url(images/bg-banner.jpg) no-repeat center top /cover; min-height: 352px; color: #fff;}
+.banner-caption{padding: 50px 0 0 0}
+.banner-caption h2{font-size: 36px; }
+.banner-caption p{font-size: 18px; color: #fff; margin-bottom: 25px; line-height: 25px;}
+.banner-caption a {background: #ee1d23; color: #fff;display: inline-block; padding: 7px 15px; text-decoration: none;}
+.marquee-header {
+    background: #f5f861;
+    color: #000;
+    margin: 40px 0 0 0;
+    padding: 8px 20px 4px 20px;
+    position: relative;
+    z-index: 9999;
+}
+.header-features { background: #fff; display: inline-block;box-sizing: border-box; margin: 1px 0 30px 0 ; padding: 20px 2%; width: 100%; -webkit-box-shadow: 0 6px 5px -7px rgba(0, 0, 0, 0.75); -moz-box-shadow: 0 6px 5px -7px rgba(0, 0, 0, 0.75); box-shadow: 0 6px 5px -7px rgba(0, 0, 0, 0.75);}
+.header-features img{float: left; margin-right: 10px;}
+.header-features span.text{float: left}
+
+.course-list h2 {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+.course-list > h2::before {
+    background: #000;
+    bottom: 3px;
+    content: " ";
+    display: inline-block;
+    height: 1px;
+    left: -10px;
+    margin: 0 10px;
+    position: absolute;
+    width: 80px;
+}
+
+.course-list ul{margin:0 0 35px 0; padding: 0;}
+.course-list ul li {display: inline-block; list-style: outside none none; margin: 0 5px 15px 0; padding: 0; vertical-align: top; width: 24%;}
+.course-list ul li:hover{box-shadow: 0 2px 0 rgba(0, 58, 22, 0.2), 0 2px 2px rgba(0, 58, 22, 0.15);}
+.course-list ul li {box-shadow: 0 0 0 rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.15);}
+.course-list .item img{}
+
+.combocourses-list li{width: auto;}
+/*.course-list ul li:hover{box-shadow: 0 2px 0 rgba(0, 58, 22, 0.2), 0 2px 2px rgba(0, 58, 22, 0.15);}
+.course-list ul li {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 0 15px;
+    padding: 0;
+    vertical-align: top;
+    width: 19%;
+}
+.course-list ul li:nth-child(2) { margin: 0 10px;}
+.course-list ul li:nth-child(3) { margin: 0 10px 0 0;}
+.course-list ul li:nth-child(4) { margin: 0 12px 0 0;}*/
+
+.course-list .item:hover{box-shadow: 0 2px 0 rgba(0, 58, 22, 0.2), 0 2px 2px rgba(0, 58, 22, 0.15);}
+.course-list .item {box-shadow: 0 0 0 rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.15);}
+
+
+.course-list .info h2 a{color: #000; text-decoration: none;} 
+.course-list .info h2 {font-size: 13px; line-height: 18px; margin:12px 0 5px; min-height:54px; font-weight: bold}
+.course-list .info h3 {font-size: 13px; line-height: normal; margin: 8px 0; font-weight: normal;}
+.course-list .info {border-top: 1px solid #e3e3e3; background: #fff; padding: 0 15px; min-height: 190px; position: relative;}
+.course-list.classroom .info{min-height: 180px;}
+.course-list .info.classroom{min-height: 180px;}
+.course-list ul li:hover .price a, .course-list ul li:hover .price{color: #000}
+.course-list .owl-item:hover .price a, .course-list .owl-item:hover .price{color: #000}
+.course-list .info .price {
+    border-top: 1px solid #f4f4f4;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+    padding: 9px 10px 9px 20px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 163px;
+    color: #17aa1c;
+}
+.course-list .info .price a{text-decoration: none;}
+.course-list .viewall {background: #009cdd; color: #fff; float: right; margin: 40px 0 0 0; padding: 2px 11px;text-decoration: none;}
+.tabssticky {background: #fff;border-bottom: 1px solid #ccc !important; left: 0; padding: 0; position: fixed;top: 0; width: 100%; z-index: 9999;text-align: center;}
+.tabssticky li {display: inline-block;float: none; margin: 0 -3px -1px -3px;}
+.drop-from.tabssticky {width: 360px;}
+
+.breadcrumb {background-color: #fff; border-bottom: 1px solid #e4e4e4; border-radius: 4px; list-style: outside none none; margin: 0 0 20px; padding: 12px 0px;}
+.caltoaction{float: right;}
+
+.content{margin-left: 0 !important}
+.content-wrapper h1{font-size: 24px; margin-top: 0}
+.course-info {
+    background: #f6f6f6 none repeat scroll 0 0;
+    border: 1px solid #e8e8e8;
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 2%;
+    width: 96%;
+}
+.course-info h2{font-size: 18px; color: #ee1d23; font-weight: normal; margin:0; line-height: normal;}
+.course-info img {border: 1px solid #ebebeb;}
+.satisfy_lerners { background: #fff url("images/bg-lerners.png") no-repeat left 11px top 6px; border: 1px solid #e8e8e8;display: inline-block; font-size: 12px; padding: 4px 12px 5px 32px;}
+
+.nav-tabs > li{background: #fff;}
+.nav-tabs > li > a {border: 1px solid #d9d9d9; border-radius: 0;}
+.nav-tabs > li > a, .nav-pills > li > a { margin-right: -1px; padding: 8px 28px; color: #6a6a6a;}
+.nav-tabs{border:none;}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus { background: #009cdd;color: #fff; border-color: #009cdd;}
+.nav > li > a:hover, .nav > li > a:focus{background: #009cdd; color: #fff; border-color: #009cdd;}
+
+.table{margin-bottom: 30px;}
+.table thead th { background: #434343; color: #fff;vertical-align: bottom;}
+.table th, .table td { padding: 10px 8px 10px 20px; border-radius: 0 !important;}
+.table {border-left: 1px solid #ccc; border-radius: 0 !important;}
+.drop-from h2 { background: #009cdd;color: #000; font-size: 14px; margin: 0; padding: 4px 26px;}
+.drop-from .wpcf7 {display: inline-block; background: #f3f3f3; margin-bottom: 19px; padding: 25px 25px 0;}
+.drop-from .wpcf7 input {
+    border-radius: 0;
+    padding: 9px 20px;
+    width: 85%;
+    height: 35px;
+}
+.drop-from .wpcf7 textarea {border-radius: 0;padding: 9px 20px;height: 95px; width: 85%; margin-bottom: 15px;}
+.drop-from .wpcf7 select {margin-bottom: 10px; border-radius: 0; height: 39px;padding: 9px 20px; width: 100%; max-width: 100%;}
+.drop-from .wpcf7 .wpcf7-submit {background: #f15322; border: 0 none; color: #fff; padding: 12px 0; text-align: center; width: 100%;}
+.drop-from ul{margin:0; list-style: none}
+.wpcf7-form ul li:hover{background: none !important}
+.wpcf7-response-output{display: inline-block;}
+.footer_wrapper {background: #009cdd;color: #fff;float: left; padding: 19px 0; width: 100%;}
+.tab-content h2.heading {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 4px;
+    font-weight: bold;
+}
+.tab-content #batches h2.heading {
+    font-size: 13px;
+}
+.offer-tab {border: 1px solid #ccc; display: inline-block; padding: 3px 0; width: 99%;margin-bottom: 20px;}
+.offer-tab span {background: #8f278f; color: #fff; line-height: normal; margin: 0 5px 0 -1px;padding: 6px 11px 5px;}
+.enrolnow {background: #009cdd;  color: #fff;font-size: 13px; padding: 3px 10px;text-decoration: none;}
+.enrolnow:hover{color: #fff; background: #70a366;  text-decoration: none;}
+
+/*Section About*/
+.about-wrapper{background: url(images/bg-aboutus.jpg) repeat center top; color: #fff; padding: 50px 0; margin-top: 30px;}
+.about-wrapper h2{margin-bottom: 25px; position: relative;}
+.about-wrapper p{color: #fff;  margin:0 0 35px 0;}
+.about-wrapper a{background: #1b5384; color: #fff; text-decoration: none; padding:15px 40px;}
+.about-wrapper h2::before {background: #fff; bottom: -3px; content: " "; display: inline-block; height: 1px; left: -10px; margin: 0 10px; position: absolute; width: 80px;}
+.about-wrapper ul{margin:0; padding:0;}
+.about-wrapper li{margin:0; padding:0; list-style: none;}
+
+
+/*Section QUick Enquiry*/
+.quickenquity-wrapper{padding: 50px 0}
+.quickenquiry-from h2{font-size: 25px; font-weight: normal; margin-bottom: 25px; position: relative;}
+.quickenquiry-from > h2::before {background: #000; bottom: -3px; content: " "; display: inline-block; height: 1px; left: -10px;margin: 0 10px; position: absolute;width: 80px;}
+
+.quickenquiry-from ul{margin: 0; padding:0;}
+.quickenquiry-from ul li{margin: 0; padding:0; list-style: none;}
+.quickenquiry-from ul li input.wpcf7-submit {
+    background: #009ede none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    padding: 12px;
+    width: 90%;
+    height: 43px;
+}
+.quickenquiry-from ul li input {
+    border-color: #e1e1e1;
+    padding: 7px 16px;
+    width: 84%;
+    height: 35px;
+}
+.quickenquiry-from ul li textarea {
+    border-color: #e1e1e1;
+    height: 80px;
+    padding: 7px 16px;
+    width: 84%;
+    margin-bottom: 15px;
+}
+.quickenquiry-from ul li select {
+    border-color: #e1e1e1;
+    height: 35px;
+    padding: 7px 16px;
+    width: 90% !important;
+    max-width: 90% !important;
+    margin-bottom: 10px;
+}
+
+.quick-links h2{font-size: 25px; font-weight: normal; margin-bottom: 25px; position: relative;}
+.quick-links > h2::before {background: #000; bottom: -3px; content: " "; display: inline-block; height: 1px; left: -10px;margin: 0 10px; position: absolute;width: 80px;}
+
+
+.ourclient h2{font-size: 25px; font-weight: normal; margin-bottom: 35px; position: relative; display: inline-block;}
+.ourclient h2::before {background: #fff; bottom: -3px; content: " "; display: inline-block; height: 1px; left: 13px;margin: 0 10px; position: absolute;width: 80px;}
+.ourclient{background: url(images/bg-clients.jpg) no-repeat center top /cover; color: #fff; padding:20px 0 24px 0}
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto !important;
+}
+.owl-nav{margin:15px 0 0 0}
+.owl-carousel .owl-next  {
+    background: url(images/right1.png) no-repeat left top;
+    font-size: 0;
+    width: 24px;
+    display: inline-block;
+    height: 26px;
+}
+.owl-carousel .owl-nav .owl-prev {
+    background: url(images/left1.png) no-repeat left top;
+    font-size: 0;
+    width: 24px;
+    display: inline-block;
+    height: 26px;
+}
+#Testimonials .owl-next  {
+    background: url(images/right1.png) no-repeat left top;
+    font-size: 0;
+    width: 24px;
+    display: inline-block;
+    height: 26px;
+}
+#Testimonials .owl-prev {
+    background: url(images/left1.png) no-repeat left top;
+    font-size: 0;
+    width: 24px;
+    display: inline-block;
+    height: 26px;
+}
+.trending_corses{ padding:20px 0 40px 0; background: #fff; border-top:1px solid #e5e5e5;}
+.trending_corses h2{font-size: 25px; font-weight: normal; margin-bottom: 35px; position: relative; display: inline-block;}
+.trending_corses h2::before {background: #000; bottom: -3px; content: " "; display: inline-block; height: 1px; left: 40px;margin: 0 10px; position: absolute;width: 80px;}
+.trending_corses ul{margin:0; padding: 0; text-align: center;}
+.trending_corses li{display: inline-block; list-style: none;}
+.trending_corses ul li a{color: #000; line-height: 25px; font-size: 13px;}
+
+.trending_corses ul li {
+    background: rgba(0, 0, 0, 0) url("images/divider.jpg") no-repeat scroll left top 7px;
+    padding: 0 7px 0 10px;
+}
+.social_reviews h2{font-size: 25px; font-weight: normal; margin-bottom: 35px; position: relative; display: inline-block;}
+.social_reviews h2::before {background: #000; bottom: -3px; content: " "; display: inline-block; height: 1px; left: 40px;margin: 0 10px; position: absolute;width: 80px;}
+
+.videocontainer{ padding:40px 0 40px 0}
+.sticky-popup-right .popup-title {
+    color: #fff;
+    display: block;
+    padding: 24px 7px 0 8px !important;
+    transform: rotate(0deg) !important;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+}
+.popup-content-pad ul{margin:0; padding: 0; list-style: none;}
+.popup-content input {
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 32px;
+}
+.popup-content input, textarea {
+    max-width: 95% !important;
+}
+.popup-content input[type="submit"] {
+    max-width: 100% !important;
+}
+.popup-content select {
+    max-width: 100% !important;
+}
+.popup-content select {
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 32px;
+    margin-bottom: 10px;
+}
+.popup-content .wpcf7-submit {
+    background: #009ede none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    padding: 9px 0;
+    width: 100%;
+}
+.popup-content textarea {
+    border-radius: 0;
+    height: 90px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.course-hedaer {
+    float: right !important;
+    margin: 40px 0 20px 0 !important;
+    padding: 10px 0px 0 0;
+    width: 320px !important;
+    z-index: 9999;
+}
+.course-hedaer-inner {
+    background: #009ede none repeat scroll 0 0;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.course-hedaer ul{margin:0; padding:0;}
+.course-hedaer li{list-style: none;}
+.course-hedaer li:first-child{border:none;}
+.course-hedaer ul li {
+    border-top: 1px solid #2db6ed;
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.course-hedaer ul li:hover{background: #0096d3;}
+.course-hedaer h2 {
+    background: #f5f861 none repeat scroll 0 0;
+    font-size: 18px;
+    margin: -10px 0 0 0;
+    padding: 0 15px;
+}
+.course-hedaer ul li a {
+    background: rgba(0, 0, 0, 0) url("images/bullet.png") no-repeat scroll left 20px top 17px;
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    margin: 0;
+    padding: 10px 0 10px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 85%;
+    cursor: pointer;
+}
+.course-hedaer .sub-menu {
+    background: #009ede;
+    display: none;
+    float: left;
+    left: -320px;
+    position: absolute;
+    width: 320px;
+    z-index: 9999;
+    top: 0;
+}
+.course-hedaer .sub-menu li{border-color:#2db6ed; list-style: none;}
+.course-hedaer .sub-menu li a{color: #fff }
+.course-hedaer .sub-menu li a:hover, .course-hedaer .sub-menu li:hover a{color: #fff}
+.course-hedaer ul li:hover .sub-menu{display: block;}
+.course-hedaer ul li:hover ul li .sub-menu {display: none;}
+.course-hedaer ul li ul li:hover .sub-menu {display: block;}
+
+
+.tags{padding: 25px 0}
+.tags a {background: #8f278f;color: #fff; display: inline-block; margin: 0 0 2px; padding: 5px 22px 7px; text-decoration: none; text-transform: uppercase;}
+.tags a:hover, .tags a:focus{color: #fff}
+#Testimonials .item h2 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+}
+
+
+.socialmedia ul{margin: 0; padding: 0}
+.socialmedia ul li{margin: 0 10px; padding: 0; list-style: none; display: inline-block;}
+
+
+
+.course-list .owl-nav {
+    margin: 3px 0 0;
+    position: absolute;
+    right: 85px;
+    top: -54px;
+}
+.course-list .owl-next  {
+    background: url(images/right1.png) no-repeat left top !important;
+    font-size: 0;
+    width: 24px;
+    display: inline-block;
+    height: 26px;
+}
+.course-list .owl-prev {
+    background: url(images/left1.png) no-repeat left top!important;
+    font-size: 0;
+    width: 24px;
+    display: inline-block;
+    height: 26px;
+}
+.course-list .owl-item{padding-bottom: 2px}
+.page-template-full-template-events .course-hedaer,
+.page-template-full-template-classroom .course-hedaer,
+.page-template-full-template-online .course-hedaer,
+.page-template-full-template-all-courses .course-hedaer, 
+.page-template-template-combo-courses .course-hedaer,
+.page-template-success-template  .course-hedaer{ margin: 0 0 20px 0!important;}
+.footer_slider {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    color: #fff;
+    padding: 45px 0;
+}
+
+.wpcf7-form ul{margin:0; padding:0;}
+.wpcf7-form ul li{margin:0; padding:0; list-style: none;}
+.aol_ad_list{margin:0; padding:0; list-style: none;}
+.aol_ad_list li:first-child{border:none; padding-top: 5px;}
+
+.aol_ad_list li {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top:1px solid #e5e5e5; 
+}
+.page-template-proceed-template .content{position: relative;}
+.paymnet-personalinfi-form{margin:0; padding: 0;}
+.paymnet-personalinfi-form li{margin:0; padding: 0; list-style: none; width: 100%}
+.paymnet-personalinfi-form li label{}
+.paymnet-personalinfi-form li input[disabled] {border: 1px solid #a9a9a9;}
+.paymnet-personalinfi-form li input, 
+.paymnet-personalinfi-form li textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid #a9a9a9;
+}
+.paymnet-personalinfi-form li input[type="submit"],  .contactpage-form input[type="submit"] {
+    background: #2db6ed;
+    color: #fff;
+    width: 40%;
+    padding: 15px 0;
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+    border-color: #2db6ed;
+}
+#wpcf7-f6451-p5737-o1 input[type="text"], #wpcf7-f76-p5739-o1 input[type="text"]{
+    width: 100%;
+    padding: 10px 15px !important;
+    height: 35px;
+}
+#wpcf7-f6451-p5737-o1 textarea, #wpcf7-f76-p5739-o1 textarea {
+    width: 100%;
+    padding: 10px 15px !important;
+    max-width: 100% !important;
+    margin-bottom: 15px;
+}
+.format {
+    font-size: 12px;
+    margin: -11px 0 14px 0;
+    display: block;
+}
+.wpcf7-form .Resume{display: inline-block; margin-bottom: 10px;}
+
+#wpcf7-f6451-p5737-o1 input[type="submit"], #wpcf7-f76-p5739-o1 input[type="submit"]{
+        background: #009ede none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    padding: 12px;
+    width: 150px;
+}
+.social_reviews {
+    padding: 30px 0;
+    border-top: 1px solid #e5e5e5;
+    background: #fff;
+}
+.social_reviews a {
+    padding: 0 25px;
+    background: #fff;
+    display: inline-block;
+    margin: 0 8px;
+    border: 1px solid #ccc;
+}
+.aol_app_form input{margin: 0 !important; padding: 18px 6px !important;}
+.contactpage-form li  input[type="text"], .contactpage-form li textarea{
+    width: 100%;
+    max-width: 100% !important;
+    padding: 18px 10px;
+}
+.mastersprogram{margin:0; padding: 0; list-style: none;}
+.mastersprogram li{
+    clear: both;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.mastersprogram .mastr-content h2 {
+    font-size: 15px;
+    line-height: 13px;
+    margin: 0 0 12px;
+}
+.mastersprogram .master-thumb {
+    float: left;
+    margin: 0 35px 0 0;
+}
+.mastersprogram .master-thumb img{border:1px solid #ccc; width: 277px;}
+
+.combocourses-list li img{}
+
+#popups-cnt{padding: 10px !important}
+.popup-phone {
+    color: #FFF;
+    width: 49%;
+    float: left;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 26px;
+    background: #009cdd;
+}
+.popup-heading{
+    background: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.newcourse-list {margin: 0; padding: 0; text-align: center;}
+.newcourse-list li {
+    display: inline-block;
+    text-align: center;
+    margin: 15px 8px;
+    font-size: 13px;
+    background: #f5f861;
+    color: #000;
+    padding: 4px 18px;
+    border-radius: 15px;
+}
+.popup-body p{    
+    text-align: center;
+    padding: 0 30px;
+    color: #fff;
+}
+.popup-body p a{color: #fff; text-decoration: underline;}
+@media only screen and (max-width: 480px) {
+    .no-js .owl-carousel, .owl-carousel.owl-loaded{float: left}
+    .container{padding:0 20px}
+    .course-hedaer{float: none !important; width: 100% !important}
+    .navbar{background: #fff; border-top:1px solid #ccc;}
+    .table-responsive{overflow-x: scroll;}
+    #mainnav li {background: none; width: 100%;}
+    .navbar .brand{color: #fff;}
+    #mainnav li.current-menu-item a,
+    #mainnav li a:hover,
+    ul#mainnav li.current-menu-ancestor a {color: #FFFFFF;}
+    #mainnav li a {color: #fff; float: left;padding: 6px 10%;width: 80%;}
+    #tiny-carousel-slider1 .viewport {width: 65% !important;margin: 0 auto;}
+    #main_nav {background: none;}
+    .top-logos img{float: none; display: inline-block;}
+    .top-logos, .logo_block{text-align: center;}
+    .header-features{margin: -1px 0 30px 0}
+    .header-features span.text{float: none;}
+    .header-features .span3{margin-bottom: 15px}
+    .course-list .viewall{padding: 0 5px; font-size: 11px; margin:35px 0 13px 0;}
+    .course-list .owl-nav {
+        margin: 15px 0 0;
+        position: absolute;
+        right: 60px;
+        top: -61px;
+    }
+    .quickenquiry-from ul li textarea{
+        width: 88%;
+    }
+    .mastersprogram .master-thumb {
+        float: left;
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+    .mastersprogram .master-thumb img{
+        width: 100%;
+    }
+    .marquee-header{
+        background: #f5f861;
+    color: #000;
+    margin: 40px 0 0 0;
+    padding: 8px 20px 4px 20px;
+    position: relative;
+    z-index: 9999;
+    height: 50px;
+    bottom: 0;
+    display: inline;
+}
+    .owl-carousel .owl-item img{width: 100% !important}
+    .navbar-inner{border-radius: 0}
+    .about-wrapper li{margin-top: 35px;}
+    .about-wrapper li iframe{ width: 100% !important }
+    .quickenquiry-from ul li input{width: 88%!important;}
+    .quickenquiry-from ul li select{width: 100% !important; max-width: 100% !important}
+    .quickenquiry-from ul li input.wpcf7-submit{width: 100%!important}
+    .banner-caption h2{font-size: 20px; line-height: normal;}
+    .banner-caption p{font-size: 16px; line-height: normal;}
+    .course-hedaer .sub-menu {position: static; background: #0489bf; width: 100%;}
+    .social_reviews a{margin-bottom: 15px;}
+
+}
+
+@media only screen and (max-width: 767px) {
+    .container {padding: 0 5%; width: 90%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #mainnav li {
+        background: none;
+        width: 100%;
+    }
+    #mainnav li.current-menu-item a,
+    #mainnav li a:hover,
+    ul#mainnav li.current-menu-ancestor a {
+        color: #FFFFFF;
+    }
+    #mainnav li a {
+        color: #000000;
+        float: left;
+        padding: 6px 10%;
+        width: 80%;
+    }
+    #main_nav {
+        background: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-inner {
+        padding: 0 !important;
+    }
+    .navbar .brand {
+        display: none!important;
+    }
+    .home .row-fluid .span8.home-courses {width: 70%; margin-left: 0;}
+}
+@media (min-width: 1200px){
+.page-template-full-template-all-courses  .course-list .info{min-height: 0}
+.page-template-full-template-events .row-fluid .course-list, 
+.page-template-full-template-classroom .row-fluid .course-list,
+.page-template-full-template-online .row-fluid .course-list,
+.page-template-full-template-all-courses  .course-list,
+.page-template-template-combo-courses   .course-list,
+.page-template-success-template .content
+{
+    width: 70%;
+}
+
+.page-template-template-course .course-hedaer, .page-template-template-mastersprogram  .course-hedaer{
+    margin-top: 0  !important;
+}
+div.wpcf7-validation-errors{float: left; }
+.amazingcarousel-list{width: 100%  !important; text-align: center !important;}
+.amazingcarousel-item{display: inline-block !important; float: none !important;}

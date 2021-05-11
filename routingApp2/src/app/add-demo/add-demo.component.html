@@ -1,0 +1,99 @@
+ 
+<div class="container" style="padding-top:40px;">  
+    <div class="row">  
+      <div class="col-md-6 mx-auto">  
+        <div class="card mx-4">  
+          <div class="card-body p-4"> 
+             <!--  {{signIn.value | json}}  -->  
+            <form #demoForm = "ngForm" >  
+              <div class="form-group">
+              <h1 style="text-align:center">Add New Demo</h1>    
+              
+                <div class="input-group mb-3">   
+                 
+                    <input type="text" class="form-control" placeholder="Demo Name"  
+                            name="userNameDisplay" 
+                            autocomplete="off"
+                            required
+                            [(ngModel)]="demoModelForm.demoName"
+                            #userName="ngModel"
+                            [class.is-invalid]="userName.invalid && userName.touched"
+                            pattern="[a-zA-Z ]*"  
+                            > 
+                            <span *ngIf="userName.invalid && userName.touched" class= "input-group-addon">
+                                <i class="fa fa-fw fa-info-circle text-danger " style="height:10px;" aria-hidden="true" ></i> </span>  
+                   
+                <small *ngIf="userName.invalid && userName.touched" class="text-danger">
+                  Demo Name is required 
+                </small>  
+              </div> 
+                
+              <div class="input-group mb-3">  
+                    <input type="text" class="form-control" placeholder="Demo Date"
+                            name="loginNameDisplay"
+                            required
+                            [(ngModel)]="demoModelForm.demoDate"
+                            #loginName = "ngModel"
+                            [class.is-invalid]="loginName.invalid && loginName.touched"
+                           
+                            >  
+              </div>  
+              
+              <div class="input-group mb-4">  
+                    <input type="text" class="form-control" placeholder="demoLocation" 
+                            name="emailDisplay"
+                            required  
+                            [(ngModel)]="demoModelForm.demoLocation"
+                            #email = "ngModel"
+                            [class.is-invalid]="email.invalid && email.touched"
+                    >  
+              </div>  
+
+               
+
+              <div class="input-group mb-4">  
+                <input type="text" class="form-control" placeholder="demoMode"     
+                        name="contactDisplay"
+                        required  
+                        [(ngModel)]="demoModelForm.demoMode"
+                        #contact = "ngModel"
+                        [class.is-invalid]="contact.invalid && contact.touched"
+                        
+                         >
+            
+            
+            </div>  
+            
+              <div class="input-group mb-4">  
+                <input type="text" class="form-control" placeholder="Demo Fee"  
+                        name="addressDisplay"
+                        required  
+                        [(ngModel)]="demoModelForm.demoFees"
+                        #adress = "ngModel"
+                        [class.is-invalid]="adress.invalid && adress.touched" 
+                        
+          
+                >  
+              </div>  
+			  
+			      
+              <div class="input-group mb-4">  
+                <input type="text" class="form-control" placeholder="Demo Faculty"  
+                        name="demoFaculty"
+                        required  
+                        [(ngModel)]="demoModelForm.demoFaculty"
+                        #adress = "ngModel"
+                        [class.is-invalid]="adress.invalid && adress.touched" 
+                        
+          
+                >  
+              </div>   
+              
+              <button type="submit"  [disabled] = "demoForm.form.invalid" class="btn btn-block btn-success" (click)="addDemo()">Add Demo</button>  
+            </div>
+            </form>  
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+  </div>  

@@ -1,0 +1,20 @@
+<div class="hCss2 container">
+<div style="margin-top : 20px;">
+    <tr>
+        <td style="text-align: left; width:100px;">
+             
+        </td>
+        <td style="text-align: center; width:700px;">
+            <input type="text" [(ngModel)]="searchCource"
+             placeholder="                                     
+                           Search Cource             " 
+              class="form-control">
+        </td>
+
+        
+    </tr>
+</div>
+
+
+  <app-learn-cources-child *ngFor=" let cDtl of allCources | searchCource : searchCource" [courceDetailData]= "cDtl"></app-learn-cources-child>
+</div>
